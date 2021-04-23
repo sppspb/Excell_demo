@@ -63,6 +63,7 @@ public class EmployeeImport extends Report{
 	
 	//Save button
 	public void clickonUploadBtn() {
+		//save changes
 		btnSave.click();
 	}
 	
@@ -71,6 +72,7 @@ public class EmployeeImport extends Report{
 		EmpList.click();
 	}
 	
+	//Extract data from table
 	public void verifyEmployee(String ExpectedEmpID) throws Exception {
 		try {
 			//rows

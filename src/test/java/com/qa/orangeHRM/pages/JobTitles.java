@@ -45,6 +45,8 @@ public class JobTitles extends Report {
 
 	@FindBy(id="resultTable")
 	WebElement resultTable;
+	
+	//Parametric constructor
 
 	public JobTitles(WebDriver driver,ExtentTest test) throws IOException {
 		setDriver(driver);
