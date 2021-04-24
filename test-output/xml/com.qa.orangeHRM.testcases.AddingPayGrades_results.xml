@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="6.143">
+           time="18.985">
     <properties></properties>
 
 
 
             <testcase
                 name="addingpayGrades"
-                time="6.143"
+                time="18.985"
                 classname="com.qa.orangeHRM.testcases.AddingPayGrades">
             </testcase>
 </testsuite>
