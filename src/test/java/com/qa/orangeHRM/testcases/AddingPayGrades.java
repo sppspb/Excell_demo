@@ -1,5 +1,6 @@
 package com.qa.orangeHRM.testcases;
 
+import org.apache.commons.lang.RandomStringUtils;
 import org.testng.annotations.Test;
 
 import com.qa.orangeHRM.common.base;
@@ -33,7 +34,7 @@ public class AddingPayGrades extends base{
 			pg.NavigatetoPayGrades();
 			pg.clickOnAddButton();
 			pg.VerifyAddPayGradePage();
-			pg.Enter_PayGrade_Name("Grade19");
+			pg.Enter_PayGrade_Name("Grade"+ RandomStringUtils.randomNumeric(4));
 			pg.ClickOnSaveBtn();
 			pg.EditPayGradePage();
 			pg.add_Currency();

@@ -2,6 +2,7 @@ package com.qa.orangeHRM.testcases;
 
 import java.io.IOException;
 
+import org.apache.commons.lang.RandomStringUtils;
 import org.testng.annotations.Test;
 
 import com.qa.orangeHRM.common.base;
@@ -30,7 +31,7 @@ public class AddingJobTitleTest extends base {
 				JobTitles jt = new JobTitles(driver,test);
 				jt.NavigateToJobTitlesPage();
 				jt.clickOnAddBtn();
-				jt.enterJobTitle("Senior Developer3");
+				jt.enterJobTitle("Senior Developer"+ RandomStringUtils.randomNumeric(4));
 				jt.clickOnSave();
 				jt.verifyJobTitle();
 			}catch(Exception e1) {
